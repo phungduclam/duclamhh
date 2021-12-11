@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Độ ưu tiên trong css</title>
+
+       
+        <style>
+            h1{
+                color: blue ;
+            }
+            h1{
+               color: red !important;
+              /* vì cái màu đỏ được viết sau nên h1 sẽ có màu đỏ */
+           }
+          
+        </style>
+
+        
+
+
+
+    </head>
+
+    <body>
+        <h1 style="color: navy;" id="heading" class="non-heading" >PRIORITY?</h1>
+        <ol>
+            <!-- 2 cái k có độ ưu tiên cái nào viết sau lấy cái đấy vì coi là mới hơn -->
+            <!-- internal ,external được coi như là mức ưu tiên thấp nhất -->
+            <li>internal,external?</li>
+            <!-- 2 cái k có độ ưu tiên cái nào viết sau lấy cái đấy vì coi là mới hơn -->
+            <li>inline 1000 point</li>
+            <li>#id-100 point</li>
+            <li>.class-10 point</li>
+            <li>tag-1 point</li>
+            <li>equal specificity</li>
+            <!-- nếu giống nhau cùng là 1 selector thì cái nào viết sau sec được ưu tiên -->
+            <li>universal selector and inherited</li>
+            <!-- universal ky hiệu là * dùng css chung tất cho cả HTML ,còn inherited thì thằng cha màu gì thì con trong màu đó//nhưng mức ưu tiên của 2 cái này là 0 -->
+        </ol>
+
+    </body>
+</html>

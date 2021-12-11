@@ -1,0 +1,23 @@
+/* day la cach dat bien toan cuc cho toan bo file html */
+:root{
+    --duclam-color: red;
+    --ductung-font-size: 48px;
+}
+
+h1{
+    /* con day la dat bien cuc bo  */
+    --huybeo-coler:green;
+    color: var(--huybeo-coler);
+    font-size: var(--ductung-font-size);
+}
+
+h2{
+    --phungson-font-size:18px;
+    --luuson-color:navy;
+    color: var(--luuson-color);
+    font-size: var(--phungson-font-size);
+}
+
+h3{
+    color: var(--duclam-color);
+}

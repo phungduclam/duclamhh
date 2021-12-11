@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cac ham chuc nang trong css</title>
+
+    <style>
+        .box{
+            width:calc(50% ) ;
+            height: 100px ;
+            background: rgba(1, 0, 2, 0.678) ;
+        }
+        
+        .flash:hover{
+            color: red;
+        
+        }
+
+        .box:active{
+            background-color: chocolate;
+
+        }
+        li:first-child{
+            font-size: 28px;
+            color: blue;
+        }
+        li:last-child{
+            font-size: 28px;
+            color: blueviolet;
+        }
+        .box::before{
+            content: "lam ";
+            display: block;
+            color: red;
+            /* bt the nao cung co display nhung neu de chu gia thi phai khai bao */
+            width: 80px;
+            height: 50px;
+            background-color: black;
+        }
+
+        .box::after{
+            content: "duclam ";
+           
+            display: block;
+            /* bt the nao cung co display nhung neu de chu gia thi phai khai bao */
+            width: 80px;
+            height: 50px;
+            background-color: cadetblue;
+        }
+        .tubinh{
+            width:  30px;
+            height: 20px;
+            background-color: violet;
+
+        }
+        
+
+
+
+    </style>
+
+    </head>
+
+
+    
+    <body>
+        <h1 class="flash">everything will be oke</h1>
+        <a href="http://fullstack.edu.vn">hoc lap trinh tai</a>
+        <div class="box">
+            <div class="tubinh"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ol>
+            <li>phung</li>
+            <li>duc</li>
+            <li>lam</li>
+            <li>lop</li>
+            <li>ktmt</li>
+        </ol>
+    </body>
+
+
+</html>
